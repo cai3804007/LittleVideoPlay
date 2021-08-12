@@ -11,7 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface SeanPlyaerView : UIView
-+ (void)playerWithURL:(NSString *)url imageView:(UIImageView *)imageView;
++ (void)playerWithURL:(NSString *)url imageView:(UIImageView *)imageView contentView:(UIView *)contentView;
 @end
 
 NS_ASSUME_NONNULL_END

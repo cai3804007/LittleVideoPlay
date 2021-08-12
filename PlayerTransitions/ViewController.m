@@ -25,10 +25,14 @@
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(imageViewClick:)];
     [imageView addGestureRecognizer:tap];
     _imageView = imageView;
+    
+    
+    
+    
 }
 
 - (void)imageViewClick:(UITapGestureRecognizer *)tap{
-    [SeanPlyaerView playerWithURL:@"https://mirror.aarnet.edu.au/pub/TED-talks/911Mothers_2010W-480p.mp4" imageView:self.imageView];
+    [SeanPlyaerView playerWithURL:@"https://mirror.aarnet.edu.au/pub/TED-talks/911Mothers_2010W-480p.mp4" imageView:self.imageView contentView:self.view];
 }
 
 
